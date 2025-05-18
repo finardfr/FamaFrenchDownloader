@@ -22,13 +22,13 @@
 
 To install the package using pip:
 
-```bash
+```python
 pip install FamaFrenchDownloader
 ```
 
 ## Usage
 
-```bash
+```python
 from FamaFrenchDownloader import FamaFrenchFactor
 
 df_five_fac_monthly = FamaFrenchFactor.get_data(
