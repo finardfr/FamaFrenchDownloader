@@ -1,4 +1,4 @@
-# FamaFrenchDownloader
+# Fama French Factors Downloader
 
 **FamaFrenchDownloader** is a Python library that allows you to easily download and work with Fama-French factor data (3-factor, 5-factor, and Momentum models) across multiple global regions.
 
@@ -117,3 +117,4 @@ Defines the frequency of the data to be downloaded.
 ```python
 annual = True    # Get one row per year (e.g. 2020-12-31, 2021-12-31, ...)
 annual = False   # Get one row per month (e.g. 2020-01-01, 2020-02-01, ...)
+```
