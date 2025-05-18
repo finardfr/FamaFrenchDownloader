@@ -10,7 +10,6 @@ class FamaFrenchFactor:
     def get_data(cls, annual=True, region="North_America", factors="5"):
         factors_str = str(factors).upper()
 
-        # Se è una lista di regioni
         if isinstance(region, list):
             all_dfs = []
             for r in region:
@@ -20,10 +19,8 @@ class FamaFrenchFactor:
                 df_single.rename(columns=renamed, inplace=True)
                 all_dfs.append(df_single)
 
-            # Merge per indice
             return pd.concat(all_dfs, axis=1)
 
-        # Validazioni su input singolo
         region = region.strip()
         FAMA_FRENCH_REGIONS = [
             "US", "North_America", "Europe", "Japan",
@@ -79,7 +76,6 @@ class FamaFrenchFactor:
         df = df.apply(pd.to_numeric, errors="coerce")
         df.dropna(how="all", inplace=True)
 
-        # Normalizza colonna momentum
         if "Mom" in df.columns:
             df.rename(columns={"Mom": "WML"}, inplace=True)
 
