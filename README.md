@@ -2,6 +2,8 @@
 
 **FamaFrenchDownloader** is a Python library that allows you to easily download and work with Fama-French factor data (3-factor, 5-factor, and Momentum models) across multiple global regions.
 
+![Example Table](Table.png)
+
 ## Supported Regions
 
 - US
