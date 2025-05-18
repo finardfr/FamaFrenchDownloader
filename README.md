@@ -24,10 +24,11 @@ To install the package using pip:
 
 ```bash
 pip install FamaFrenchDownloader
+```
 
 ## Usage
 
-'''bash
+```bash
 from FamaFrenchDownloader import FamaFrenchFactor
 
 df_five_fac_monthly = FamaFrenchFactor.get_data(
@@ -40,3 +41,4 @@ df_mom_annual = FamaFrenchFactor.get_data(
     annual=True,
     region=["Europe", "North_America"],
     factors="MOM")
+```
