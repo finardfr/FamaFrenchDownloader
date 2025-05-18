@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="FamaFrenchDownloader",
-    version="0.1.0",
+    version="0.1.1",
     description="A Python library to easly download Fama-French Factor data for various regions and factor models (3-factors, 5-factors, Momentum).",
     long_description=open("README.md", encoding="utf-8").read(),
     long_description_content_type="text/markdown",
